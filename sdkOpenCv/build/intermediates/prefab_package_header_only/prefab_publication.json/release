@@ -1,0 +1,17 @@
+{
+  "installationFolder": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/build/intermediates/prefab_package/release/prefab",
+  "gradlePath": ":sdkOpenCv",
+  "packageInfo": {
+    "packageName": "sdkOpenCv",
+    "packageSchemaVersion": 2,
+    "packageDependencies": [],
+    "modules": [
+      {
+        "moduleName": "opencv_jni_shared",
+        "moduleHeaders": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/native/jni/include",
+        "moduleExportLibraries": [],
+        "abis": []
+      }
+    ]
+  }
+}

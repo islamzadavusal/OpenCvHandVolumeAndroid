@@ -1,0 +1,50 @@
+{
+  "installationFolder": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/build/intermediates/prefab_package/debug/prefab",
+  "gradlePath": ":sdkOpenCv",
+  "packageInfo": {
+    "packageName": "sdkOpenCv",
+    "packageSchemaVersion": 2,
+    "packageDependencies": [],
+    "modules": [
+      {
+        "moduleName": "opencv_jni_shared",
+        "moduleHeaders": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/native/jni/include",
+        "moduleExportLibraries": [],
+        "abis": [
+          {
+            "abiName": "armeabi-v7a",
+            "abiApi": 21,
+            "abiNdkMajor": 27,
+            "abiStl": "c++_shared",
+            "abiLibrary": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/armeabi-v7a/libopencv_jni_shared.a",
+            "abiAndroidGradleBuildJsonFile": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/armeabi-v7a/android_gradle_build.json"
+          },
+          {
+            "abiName": "arm64-v8a",
+            "abiApi": 21,
+            "abiNdkMajor": 27,
+            "abiStl": "c++_shared",
+            "abiLibrary": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/arm64-v8a/libopencv_jni_shared.a",
+            "abiAndroidGradleBuildJsonFile": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/arm64-v8a/android_gradle_build.json"
+          },
+          {
+            "abiName": "x86",
+            "abiApi": 21,
+            "abiNdkMajor": 27,
+            "abiStl": "c++_shared",
+            "abiLibrary": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/x86/libopencv_jni_shared.a",
+            "abiAndroidGradleBuildJsonFile": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/x86/android_gradle_build.json"
+          },
+          {
+            "abiName": "x86_64",
+            "abiApi": 21,
+            "abiNdkMajor": 27,
+            "abiStl": "c++_shared",
+            "abiLibrary": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/x86_64/libopencv_jni_shared.a",
+            "abiAndroidGradleBuildJsonFile": "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/x86_64/android_gradle_build.json"
+          }
+        ]
+      }
+    ]
+  }
+}

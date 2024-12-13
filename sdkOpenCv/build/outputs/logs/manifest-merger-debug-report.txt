@@ -1,0 +1,17 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml:2:1-4:12
+INJECTED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml:2:1-4:12
+	package
+		ADDED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml:3:7-27
+		INJECTED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml
+INJECTED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/java/AndroidManifest.xml

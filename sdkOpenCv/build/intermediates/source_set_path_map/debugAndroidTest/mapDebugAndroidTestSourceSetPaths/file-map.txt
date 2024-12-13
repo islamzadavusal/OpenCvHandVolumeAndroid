@@ -1,0 +1,5 @@
+org.opencv.test.sdkOpenCv-androidTest-0 /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/build/generated/res/resValues/androidTest/debug
+org.opencv.test.sdkOpenCv-mergeDebugAndroidTestResources-1 /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+org.opencv.test.sdkOpenCv-mergeDebugAndroidTestResources-2 /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+org.opencv.test.sdkOpenCv-debugAndroidTest-3 /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+org.opencv.test.sdkOpenCv-debug-4 /Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/build/intermediates/packaged_res/debug/packageDebugResources

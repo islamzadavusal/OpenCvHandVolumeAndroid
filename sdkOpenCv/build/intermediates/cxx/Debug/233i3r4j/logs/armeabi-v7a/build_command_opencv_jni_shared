@@ -1,0 +1,4 @@
+/Users/islamzada/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  "/Users/islamzada/Desktop/Android Projects/OpenCvHandVolume/sdkOpenCv/.cxx/Debug/233i3r4j/armeabi-v7a" \
+  opencv_jni_shared
