@@ -12,7 +12,19 @@ This project was developed to control the volume with hand movements via the cam
 
 ---
 
+## 🌟 In Beta:
+- This project is still under development. There may be bugs and performance issues.
+
+---
+
 ## 🛠 Technologies Used:
 - **Kotlin:** Android application development language.
 - **OpenCV:** Image processing library.
 - **Android Camera API:** Camera integration.
+
+---
+
+## 🎯 Future Actions:
+- Increase detection sensitivity.
+- Design a more user-friendly interface.
+- Develop a faster and more accurate finger recognition algorithm.
