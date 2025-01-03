@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity(), CameraBridgeViewBase.CvCameraViewListe
             cascadeClassifier = CascadeClassifier(cascadeFile.absolutePath).apply {
                 if (empty()) {
                     Log.e("CascadeClassifier", "Failed to load cascade")
-                    null
                 } else {
                     Log.i("CascadeClassifier", "Cascade loaded successfully")
                 }
@@ -157,34 +156,25 @@ class MainActivity : AppCompatActivity(), CameraBridgeViewBase.CvCameraViewListe
 
         val contours = ArrayList<MatOfPoint>()
         val hierarchy = Mat()
-        Imgproc.findContours(binaryMat, contours, hierarchy, Imgproc.RETR_TREE, Imgproc.CHAIN_APPROX_SIMPLE)
+        Imgproc.findContours(binaryMat, contours, hierarchy, Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE)
 
-        val validContours = contours.filter {
-            it.total() >= 3 && Imgproc.contourArea(it) > 100.0
-        }
-
-        if (validContours.isEmpty()) {
-            Log.i("DetectionHands", "No valid contours found.")
+        if (contours.isEmpty()) {
+            Log.w("Contours", "No contours found")
             return 0
         }
 
-        var maxArea = 0.0
-        var largestContour: MatOfPoint? = null
-        for (contour in validContours) {
-            val area = Imgproc.contourArea(contour)
-            if (area > maxArea) {
-                maxArea = area
-                largestContour = contour
-            }
+        val largestContour = contours.maxByOrNull { Imgproc.contourArea(it) } ?: return 0
+
+        if (Imgproc.contourArea(largestContour) < 500) {
+            Log.w("Contours", "Largest contour too small")
+            return 0
         }
 
-        if (largestContour == null) return 0
-
         val hull = MatOfInt()
-        try {
-            Imgproc.convexHull(largestContour, hull)
-        } catch (e: Exception) {
-            Log.e("ConvexHullError", "Failed to create Convex Hull: ${e.message}")
+        Imgproc.convexHull(largestContour, hull, false)
+
+        if (hull.empty()) {
+            Log.w("ConvexHull", "Convex hull is empty")
             return 0
         }
 
@@ -192,7 +182,7 @@ class MainActivity : AppCompatActivity(), CameraBridgeViewBase.CvCameraViewListe
         try {
             Imgproc.convexityDefects(largestContour, hull, defects)
         } catch (e: Exception) {
-            Log.e("ConvexityDefectsError", "Convexity Defects error: ${e.message}")
+            Log.e("ConvexityDefects", "Error computing convexity defects: ${e.message}")
             return 0
         }
 
@@ -217,7 +207,7 @@ class MainActivity : AppCompatActivity(), CameraBridgeViewBase.CvCameraViewListe
             }
         }
 
-        return if (fingersCount > 5) 5 else fingersCount
+        return fingersCount.coerceAtMost(5)
     }
 
     private fun distance(point1: DoubleArray, point2: DoubleArray): Double {
